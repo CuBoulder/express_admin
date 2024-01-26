@@ -11,7 +11,7 @@ Add to repositories section:
 ````
 {
     "type": "git",
-    "url" : "https://github.com/CuBoulder/express-admin.git"
+    "url" : "https://github.com/CuBoulder/express_admin.git"
 }
 ````
 
