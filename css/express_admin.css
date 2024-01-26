@@ -1,0 +1,24 @@
+/* edit form sidebar  */
+#ucb-edit-container.sidebar-open {
+  grid-template-columns: 3fr minmax(22.5rem, 1fr);
+}
+
+#ucb-edit-container.sidebar-closed {
+  grid-template-columns: calc(100% - 2em) 2em;
+}
+
+#ucb-edit-container.sidebar-open > #ucb-edit-main {
+    width: min(52rem, 100%);
+}
+
+#ucb-edit-container.sidebar-closed > #ucb-edit-main {
+    width: auto;
+}
+
+#ucb-edit-container.sidebar-open > #ucb-edit-sidebar > #ucb-edit-sidebar-content {
+    display: block;
+}
+
+#ucb-edit-container.sidebar-closed  > #ucb-edit-sidebar > #ucb-edit-sidebar-content {
+    display: none;
+}

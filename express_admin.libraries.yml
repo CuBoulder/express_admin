@@ -2,3 +2,5 @@ express-admin:
   css:
     layout:
       css/express_admin.css: {}
+  js:
+    js/express_admin.js: {}
