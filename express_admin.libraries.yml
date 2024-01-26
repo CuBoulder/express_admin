@@ -1,0 +1,4 @@
+express-admin:
+  css:
+    layout:
+      css/express_admin.css: {}

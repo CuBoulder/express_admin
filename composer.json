@@ -1,0 +1,6 @@
+{
+    "name": "cu-boulder/express_admin",
+    "description": "University of Colorado Boulder administration sub-theme",
+    "license": "GPL-2.0-or-later",
+    "type": "drupal-custom-theme"
+}
