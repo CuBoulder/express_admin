@@ -4,3 +4,6 @@ express-admin:
       css/express_admin.css: {}
   js:
     js/express_admin.js: {}
+
+  dependencies:
+    - core/internal.jquery.form
