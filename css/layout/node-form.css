@@ -1,4 +1,5 @@
-/* edit form sidebar  */
+/* Enables hiding the node edit form sidebar.  */
+
 #ucb-edit-container.sidebar-closed {
   grid-template-columns: calc(100% - 2em) 2em;
 }

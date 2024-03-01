@@ -8,5 +8,7 @@ libraries:
   - express_admin/global-styling
 
 libraries-extend:
-  node/form:
+  claro/node-form:
     - express_admin/node-form
+  claro/media_library.theme:
+    - express_admin/media-library
