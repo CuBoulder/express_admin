@@ -1,9 +1,13 @@
-express-admin:
+global-styling:
+  css:
+    component:
+      css/component/button.css: {}
+
+node-form:
   css:
     layout:
-      css/express_admin.css: {}
+      css/node-form.css: {}
   js:
-    js/express_admin.js: {}
-
+    js/node-form.js: {}
   dependencies:
     - core/internal.jquery.form

@@ -8,17 +8,17 @@
 }
 
 #ucb-edit-container.sidebar-open > #ucb-edit-main {
-    width: min(52rem, 100%);
+  width: min(52rem, 100%);
 }
 
 #ucb-edit-container.sidebar-closed > #ucb-edit-main {
-    width: auto;
+  width: auto;
 }
 
 #ucb-edit-container.sidebar-open > #ucb-edit-sidebar > #ucb-edit-sidebar-content {
-    display: block;
+  display: block;
 }
 
 #ucb-edit-container.sidebar-closed  > #ucb-edit-sidebar > #ucb-edit-sidebar-content {
-    display: none;
+  display: none;
 }
