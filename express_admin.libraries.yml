@@ -6,7 +6,7 @@ global-styling:
 node-form:
   css:
     layout:
-      css/node-form.css: {}
+      css/layout/node-form.css: {}
   js:
     js/node-form.js: {}
   dependencies:
