@@ -1,9 +1,20 @@
-express-admin:
+global-styling:
+  css:
+    theme:
+      css/theme/media-libaray.css: {}
+    component:
+      css/component/button.css: {}
+
+node-form:
   css:
     layout:
-      css/express_admin.css: {}
+      css/layout/node-form.css: {}
   js:
-    js/express_admin.js: {}
-
+    js/node-form.js: {}
   dependencies:
     - core/internal.jquery.form
+
+media-library:
+  css:
+    theme:
+      css/theme/media-library.css: {}

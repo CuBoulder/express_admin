@@ -1,0 +1,5 @@
+/* Fixes a bug causing a transparent button in the Media Library (CuBoulder/express_admin#8). */
+
+.ui-button.button--primary:not(:hover, :active) {
+  background-color: var(--button-bg-color--primary);
+}

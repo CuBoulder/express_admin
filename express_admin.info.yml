@@ -3,3 +3,12 @@ type: theme
 base theme: claro
 description: 'Admin theme with for use with CU Boulder Web Express sites'
 core_version_requirement: ^10
+
+libraries:
+  - express_admin/global-styling
+
+libraries-extend:
+  claro/node-form:
+    - express_admin/node-form
+  claro/media_library.theme:
+    - express_admin/media-library
