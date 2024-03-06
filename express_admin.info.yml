@@ -10,5 +10,3 @@ libraries:
 libraries-extend:
   claro/node-form:
     - express_admin/node-form
-  claro/media_library.theme:
-    - express_admin/media-library
