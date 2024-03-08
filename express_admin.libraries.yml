@@ -1,7 +1,5 @@
 global-styling:
   css:
-    theme:
-      css/theme/media-library.css: {}
     component:
       css/component/button.css: {}
 
@@ -13,8 +11,3 @@ node-form:
     js/node-form.js: {}
   dependencies:
     - core/internal.jquery.form
-
-media-library:
-  css:
-    theme:
-      css/theme/media-library.css: {}
