@@ -1,0 +1,6 @@
+/* Hides the Download Form Submission Warning about downloading results from Untrusted Sources */
+#webform-results-export div#edit-exporters-delimited-warning,
+#webform-results-export div#edit-exporters-table-warning{
+  display: none;
+}
+
