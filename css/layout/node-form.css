@@ -1,13 +1,9 @@
 /* Enables hiding the node edit form sidebar.  */
 
-#ucb-edit-container.sidebar-closed {
+.ucb-sidebar-closed .layout-form {
   grid-template-columns: calc(100% - 2em) 2em;
 }
 
-#ucb-edit-container.sidebar-closed>#ucb-edit-main {
-  width: auto;
-}
-
-#ucb-edit-container.sidebar-closed>#ucb-edit-sidebar>#ucb-edit-sidebar-content {
+.ucb-sidebar-closed #edit-advanced {
   display: none;
 }
