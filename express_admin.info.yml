@@ -8,5 +8,5 @@ libraries:
   - express_admin/global-styling
 
 libraries-extend:
-  claro/node-form:
+  node/form:
     - express_admin/node-form
