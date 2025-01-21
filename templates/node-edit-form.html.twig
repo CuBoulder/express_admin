@@ -1,41 +1,18 @@
 {#
 /**
  * @file
- * Theme override for a node edit form.
- *
- * Two column template for the node add/edit form.
- *
- * This template will be used when a node edit form specifies 'node_edit_form'
- * as its #theme callback.  Otherwise, by default, node add/edit forms will be
- * themed by form.html.twig.
+ * Contains the template for the node edit form.
  *
  * Available variables:
  * - form: The node add/edit form.
- *
- * @see claro_form_node_form_alter()
  */
 #}
-<div id="ucb-edit-container" class="layout-node-form clearfix sidebar-open">
-  <div id="ucb-edit-main" class="layout-region layout-region--node-main">
-    <div class="layout-region__content">
-      {{ form|without('advanced', 'footer', 'actions') }}
-    </div>
+{% extends '@claro/node-edit-form.html.twig' %}
+{% block secondary %}
+  <div class="ucb-sidebar-toggle-container">
+    <a role="button" aria-label="Hide or show the advanced settings" id="ucb-sidebar-toggle-button" href="#" data-status="open">
+      <i class="fa-solid fa-2x fa-toggle-on"></i>
+    </a>
   </div>
-  <div id="ucb-edit-sidebar" class="layout-region layout-region--node-secondary">
-    <div class="ucb-sidebar-toggle-container">
-      <a id="ucb-sidebar-toggle-button" href="#" data-status="open">
-        <i class="fa-solid fa-2x fa-toggle-on"></i>
-      </a>
-    </div>
-    <div id="ucb-edit-sidebar-content" class="layout-region__content">
-      {{ form.advanced }}
-    </div>
-  </div>
-  <div class="layout-region layout-region--node-footer">
-    <div class="layout-region__content">
-      <div class="divider"></div>
-      {{ form.footer }}
-      {{ form.actions }}
-    </div>
-  </div>
-</div>
+  {{ parent() }}
+{% endblock %}

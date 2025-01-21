@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Fixes node edit sidebar in 10.3
+  Needs to be tested in 10.2, it may be broken in 10.2 and earlier. If so we should set 10.3 as the core version requirement.
+  
+  [Bug] Resolves CuBoulder/express_admin#17
+---
+
 - ### Updates linter workflow
   Updates the linter workflow to use the new parent workflow in action-collection.
   

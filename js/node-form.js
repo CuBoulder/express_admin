@@ -1,19 +1,18 @@
 (function() {
   const button = document.querySelector('#ucb-sidebar-toggle-button');
-  const mainDiv = document.querySelector('#ucb-edit-container');
+  const main = document.querySelector('main');
 
-  button.addEventListener('click', () => {
+  button.addEventListener('click', event => {
+    event.preventDefault();
+
     // check the toggle state of the button 
     const status = button.dataset.status;
 
     // if the toggle status is 'open'
     if (status == 'open') {
-      mainDiv.classList.add("sidebar-closed");
-      mainDiv.classList.remove("sidebar-open");
-
+      main.classList.add('ucb-sidebar-closed');
     } else {
-      mainDiv.classList.add("sidebar-open");
-      mainDiv.classList.remove("sidebar-closed");
+      main.classList.remove('ucb-sidebar-closed');
     }
 
     // and toggle the icon/data attribute 
