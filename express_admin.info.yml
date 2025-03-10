@@ -2,7 +2,7 @@ name: Express Admin
 type: theme
 base theme: claro
 description: 'Admin theme with for use with CU Boulder Web Express sites'
-core_version_requirement: ^10
+core_version_requirement: '^10 || ^11'
 
 libraries:
   - express_admin/global-styling
