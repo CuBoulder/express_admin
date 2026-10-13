@@ -1,5 +1,6 @@
 /**
- * Color categorization swatches on the content overview View
+ * Color categorization swatches on the content overview and the basic page form.
+ * Color names stay in the option text for screen readers.
  */
 
 .form-item--field-color-categorization-value .form-element--type-select-multiple {
@@ -9,7 +10,8 @@
   text-align: center;
 }
 
-.form-item--field-color-categorization-value option {
+.form-item--field-color-categorization-value option,
+.form-item--field-color-categorization option:not([value="_none"]) {
   height: 1.375rem;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -20,31 +22,42 @@
   background-size: 0.875rem 0.875rem;
 }
 
-.form-item--field-color-categorization-value option[value="blue"] {
+.form-item--field-color-categorization option:not([value="_none"]) {
+  background-position: 0.75rem center;
+}
+
+.form-item--field-color-categorization-value option[value="blue"],
+.form-item--field-color-categorization option[value="blue"] {
   background-image: radial-gradient(circle, #0088ff 68%, transparent 70%);
 }
 
-.form-item--field-color-categorization-value option[value="green"] {
+.form-item--field-color-categorization-value option[value="green"],
+.form-item--field-color-categorization option[value="green"] {
   background-image: radial-gradient(circle, #34c759 68%, transparent 70%);
 }
 
-.form-item--field-color-categorization-value option[value="purple"] {
-  background-image: radial-gradient(circle, #cb30e0 68%, transparent 70%);
+.form-item--field-color-categorization-value option[value="purple"],
+.form-item--field-color-categorization option[value="purple"] {
+  background-image: radial-gradient(circle, #663399 68%, transparent 70%);
 }
 
-.form-item--field-color-categorization-value option[value="pink"] {
-  background-image: radial-gradient(circle, #ff2d55 68%, transparent 70%);
+.form-item--field-color-categorization-value option[value="pink"],
+.form-item--field-color-categorization option[value="pink"] {
+  background-image: radial-gradient(circle, #ff69b4 68%, transparent 70%);
 }
 
-.form-item--field-color-categorization-value option[value="orange"] {
+.form-item--field-color-categorization-value option[value="orange"],
+.form-item--field-color-categorization option[value="orange"] {
   background-image: radial-gradient(circle, #ff8d28 68%, transparent 70%);
 }
 
-.form-item--field-color-categorization-value option[value="yellow"] {
+.form-item--field-color-categorization-value option[value="yellow"],
+.form-item--field-color-categorization option[value="yellow"] {
   background-image: radial-gradient(circle, #ffcc00 60%, rgba(0, 0, 0, 0.28) 62%, rgba(0, 0, 0, 0.28) 70%, transparent 72%);
 }
 
-.form-item--field-color-categorization-value option[value="red"] {
+.form-item--field-color-categorization-value option[value="red"],
+.form-item--field-color-categorization option[value="red"] {
   background-image: radial-gradient(circle, #ff383c 68%, transparent 70%);
 }
 
@@ -97,7 +110,8 @@
     min-width: 0;
   }
 
-  .form-item--field-color-categorization-value option {
+  .form-item--field-color-categorization-value option,
+  .form-item--field-color-categorization option {
     height: auto;
     color: CanvasText;
     -webkit-text-fill-color: CanvasText;
