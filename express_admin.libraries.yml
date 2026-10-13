@@ -3,6 +3,7 @@ global-styling:
     component:
       css/component/button.css: {}
       css/component/form-warning.css: {}
+      css/component/color-categorization.css: {}
 
 node-form:
   css:

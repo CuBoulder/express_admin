@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Shows each color categorization as a circle
+ */
+#}
+{% set labels = output|render|striptags|trim|split(', ') %}
+{% if labels|join %}
+  <span class="color-categorization">
+    {% for label in labels %}
+      {% if label %}
+        <span class="color-swatch color-swatch--{{ label|clean_class }}">
+          <span class="visually-hidden">{{ label }}</span>
+        </span>
+      {% endif %}
+    {% endfor %}
+  </span>
+{% endif %}
