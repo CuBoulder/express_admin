@@ -1,13 +1,156 @@
 /**
- * Color categorization swatches on the content overview and the basic page form.
- * Color names stay in the option text for screen readers.
+ * Color categorization swatches.
+ * Color names stay in the control for screen readers.
  */
 
-.form-item--field-color-categorization-value .form-element--type-select-multiple {
-  width: 3.5rem;
-  min-width: 3.5rem;
+.basic-page-color-category-details > summary .basic-page-color-category__selected {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+  margin-inline-start: 0.5rem;
+}
+
+.basic-page-color-category-details:not([open]) > summary .basic-page-color-category__selected:not(:empty) {
+  display: inline-flex;
+}
+
+.basic-page-color-category__dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.basic-page-color-category__dot--blue {
+  background-color: #0088ff;
+}
+
+.basic-page-color-category__dot--green {
+  background-color: #34c759;
+}
+
+.basic-page-color-category__dot--purple {
+  background-color: #663399;
+}
+
+.basic-page-color-category__dot--pink {
+  background-color: #ff69b4;
+}
+
+.basic-page-color-category__dot--orange {
+  background-color: #ff8d28;
+}
+
+.basic-page-color-category__dot--yellow {
+  background-color: #ffcc00;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.28);
+}
+
+.basic-page-color-category__dot--red {
+  background-color: #ff383c;
+}
+
+.views-exposed-form .category-column {
+  width: max-content;
+  min-width: 4.5rem;
+  border: var(--input-border-size) solid var(--input-border-color);
+  border-radius: var(--base-border-radius);
+  background-color: var(--input-bg-color);
+}
+
+.views-exposed-form .category-column__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-height: calc(((var(--input-padding-vertical) + var(--input-border-size)) * 2) + var(--input-line-height));
+  margin: 0;
+  gap: 0.35rem;
+  padding-inline: 0.65rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.views-exposed-form .category-column__selected {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+  margin-inline-end: auto;
+}
+
+.views-exposed-form .category-column:not([open]) .category-column__selected:not(:empty) {
+  display: flex;
+}
+
+.views-exposed-form .category-column__dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.views-exposed-form .category-column__dot--blue {
+  background-color: #0088ff;
+}
+
+.views-exposed-form .category-column__dot--green {
+  background-color: #34c759;
+}
+
+.views-exposed-form .category-column__dot--purple {
+  background-color: #663399;
+}
+
+.views-exposed-form .category-column__dot--pink {
+  background-color: #ff69b4;
+}
+
+.views-exposed-form .category-column__dot--orange {
+  background-color: #ff8d28;
+}
+
+.views-exposed-form .category-column__dot--yellow {
+  background-color: #ffcc00;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.28);
+}
+
+.views-exposed-form .category-column__dot--red {
+  background-color: #ff383c;
+}
+
+.views-exposed-form .category-column__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.views-exposed-form .category-column__toggle::marker {
+  content: "";
+}
+
+.views-exposed-form .category-column__caret {
+  width: 0.875rem;
+  height: 0.5625rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 9'%3e%3cpath fill='none' stroke-width='1.5' d='M1 1l6 6 6-6' stroke='%23545560'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.views-exposed-form .category-column[open] .category-column__caret {
+  transform: scaleY(-1);
+}
+
+.views-exposed-form .category-column .form-element--type-select-multiple {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
   padding-inline: 0;
+  border: 0;
+  border-block-start: var(--input-border-size) solid var(--input-border-color);
+  border-radius: 0;
+  box-shadow: none;
   text-align: center;
+  background-image: none;
 }
 
 .form-item--field-color-categorization-value option,
@@ -105,11 +248,6 @@
 }
 
 @media (forced-colors: active) {
-  .form-item--field-color-categorization-value .form-element--type-select-multiple {
-    width: auto;
-    min-width: 0;
-  }
-
   .form-item--field-color-categorization-value option,
   .form-item--field-color-categorization option {
     height: auto;

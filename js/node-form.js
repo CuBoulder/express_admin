@@ -8,7 +8,7 @@
     // check the toggle state of the button 
     const status = button.dataset.status;
 
-    // if the toggle status is 'open'
+    // Toggle toggle
     if (status == 'open') {
       main.classList.add('ucb-sidebar-closed');
     } else {
@@ -25,17 +25,17 @@
     const myStatus = button.dataset.status;
 
     if (myStatus == 'open') {
-      // set the data attribute to closed 
+      // Set the data attribute to closed 
       button.dataset.status = 'closed';
 
-      // and switch to the closed icon 
+      // Switch to the closed icon 
       button.innerHTML = closeButton;
 
     } else {
-      // set the data attribute to open 
+      // Set open
       button.dataset.status = 'open';
 
-      // ans switch to the open icon 
+      // Switch to  open icon 
       button.innerHTML = openButton;
     }
   }
