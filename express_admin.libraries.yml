@@ -3,6 +3,12 @@ global-styling:
     component:
       css/component/button.css: {}
       css/component/form-warning.css: {}
+      css/component/color-categorization.css: {}
+  js:
+    js/category-column.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
 
 node-form:
   css:
