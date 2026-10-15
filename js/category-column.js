@@ -1,3 +1,4 @@
+/* global Drupal, once */
 (function (Drupal, once) {
   const colors = ['blue', 'green', 'purple', 'pink', 'orange', 'yellow', 'red'];
 
