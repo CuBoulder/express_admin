@@ -204,6 +204,44 @@
   background-image: radial-gradient(circle, #ff383c 68%, transparent 70%);
 }
 
+/* Safari paints option background-color and never paints the dot image. */
+@supports (font: -apple-system-body) {
+  .form-item--field-color-categorization-value option[value="blue"],
+  .form-item--field-color-categorization option[value="blue"] {
+    background-color: #0088ff;
+  }
+
+  .form-item--field-color-categorization-value option[value="green"],
+  .form-item--field-color-categorization option[value="green"] {
+    background-color: #34c759;
+  }
+
+  .form-item--field-color-categorization-value option[value="purple"],
+  .form-item--field-color-categorization option[value="purple"] {
+    background-color: #663399;
+  }
+
+  .form-item--field-color-categorization-value option[value="pink"],
+  .form-item--field-color-categorization option[value="pink"] {
+    background-color: #ff69b4;
+  }
+
+  .form-item--field-color-categorization-value option[value="orange"],
+  .form-item--field-color-categorization option[value="orange"] {
+    background-color: #ff8d28;
+  }
+
+  .form-item--field-color-categorization-value option[value="yellow"],
+  .form-item--field-color-categorization option[value="yellow"] {
+    background-color: #ffcc00;
+  }
+
+  .form-item--field-color-categorization-value option[value="red"],
+  .form-item--field-color-categorization option[value="red"] {
+    background-color: #ff383c;
+  }
+}
+
 .color-categorization {
   display: inline-flex;
   gap: 0.35rem;
@@ -248,12 +286,13 @@
 }
 
 @media (forced-colors: active) {
-  .form-item--field-color-categorization-value option,
-  .form-item--field-color-categorization option {
+  .form-item--field-color-categorization-value option[value],
+  .form-item--field-color-categorization option[value] {
     height: auto;
     color: CanvasText;
     -webkit-text-fill-color: CanvasText;
     font-size: inherit;
+    background-color: Canvas;
     background-image: none;
   }
 
