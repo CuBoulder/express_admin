@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- ### Color Markers: Fix Visibility in Safari/Webkit
+  Previously - Safari/Webkit wasn't able to handle inserting the color dots into the options for the multi-select on the View filters and the Edit Node form, so nothing would show in the dropdown. This change adds a visual way for Webkit to handle displaying color until a more refined solution can be developed that satisfies Webkit and looks closer to the intended effect.
+  
+  Resolves #25 
+---
+
 - ### Adds themeing for Color Categorization on Basic Pages
   This change adds a new field to Basic Pages -- "Color Category", which allows content editors to assign color categories to Basic Pages. These colors can represent whatever you decide for your site to enable additional user-accessible filtering on the `/admin/content` View.
   
