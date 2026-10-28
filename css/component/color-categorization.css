@@ -204,7 +204,7 @@
   background-image: radial-gradient(circle, #ff383c 68%, transparent 70%);
 }
 
-/* Safari paints option background-color and never paints the dot image. */
+/* Safari/Webkit - targeted body fill - can't render dots, so use bg fills. @supports locks this to Webkit only */
 @supports (font: -apple-system-body) {
   .form-item--field-color-categorization-value option[value="blue"],
   .form-item--field-color-categorization option[value="blue"] {
